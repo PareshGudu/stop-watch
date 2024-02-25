@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(rgba(105, 105, 189, 0.8), rgba(30, 30, 40, 0.8)), url(../img/watch.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.stopwatch {
+    color: #fff;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    padding: 20px 24px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+span {
+    padding: 120px 25px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#minutes {
+    color: crimson;
+}
+
+#seconds {
+    color: forestgreen;
+}
+
+#milisec {
+    color: indianred;
+}
+
+.buttons {
+    position: absolute;
+    top: 58%;
+}
+
+.btn {
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    background-color: var(--clr);
+    padding: 12px 25px;
+    cursor: pointer;
+    margin: 12px;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    background-color: transparent;
+    border: 1px solid black;
+    transition: 0.2s;
+}
+
+h1 {
+    position: absolute;
+    top: 30%;
+    background-image: url(../img/img_2.webp);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 40px;
+}
+
+@media (max-width:600px) {
+    body {
+        background-image: url(../img/watch.jpeg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    span {
+        padding: 80px 10px;
+    }
+
+    .btn {
+        font-size: 15px;
+        background: none;
+        border: none;
+        color: #fff;
+        background-color: var(--clr);
+        padding: 8px 18px;
+        cursor: pointer;
+        margin: 12px;
+        border-radius: 8px;
+    }
+}
